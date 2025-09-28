@@ -12,7 +12,7 @@ The To-Do List Manager is a simple Python console application that allows a user
  Tools & Technologies for the code
  Language - Python 
  File Handling (open, read, write)
- Exception Handling (for invalid inputs and file errors)
+ Exception Handling (for invalid inputs and file errors).
 
  ⚙️ Features
  Persistent storage (`tasks.txt`)
