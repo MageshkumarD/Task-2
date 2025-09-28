@@ -1,9 +1,5 @@
 import os
-
-# File that stores tasks
 TASKS_FILE = "tasks.txt"
-
-
 def load_tasks():
     """Load tasks from TASKS_FILE. If the file doesn't exist return an empty list."""
     if not os.path.exists(TASKS_FILE):
@@ -15,7 +11,6 @@ def load_tasks():
         print(f"Error loading tasks: {e}")
         return []
 
-
 def save_tasks(tasks):
     """Save the list of tasks to TASKS_FILE."""
     try:
@@ -25,7 +20,6 @@ def save_tasks(tasks):
     except Exception as e:
         print(f"Error saving tasks: {e}")
 
-
 def view_tasks(tasks):
     if not tasks:
         print("\nNo tasks in your To-Do List!\n")
@@ -34,8 +28,6 @@ def view_tasks(tasks):
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
         print()
-
-
 def add_task(tasks):
     task = input("Enter the task: ").strip()
     if task:
@@ -44,7 +36,6 @@ def add_task(tasks):
         print(f'Task "{task}" added successfully!\n')
     else:
         print("Task cannot be empty.\n")
-
 
 def remove_task(tasks):
     if not tasks:
@@ -64,7 +55,6 @@ def remove_task(tasks):
         print(f'Task "{removed}" removed successfully!\n')
     else:
         print("Invalid task number!\n")
-
 
 def main():
     tasks = load_tasks()
@@ -91,7 +81,5 @@ def main():
                 print("Invalid choice! Please enter 1-4.\n")
     except KeyboardInterrupt:
         print("\n\nExiting. Your tasks are saved.")
-
-
 if __name__ == "__main__":
     main()
