@@ -1,6 +1,5 @@
  Task-2-To Do list
  The To-Do List Manager is a simple Python console application that allows a users to manage their daily tasks.
-
 Key Features:
 View Tasks - Displays all saved tasks in a numbered list.
 Add Task - Allows the user to add new tasks to the list.
